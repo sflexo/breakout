@@ -73,8 +73,8 @@ while not doExit:# game loop----------------------
     by += bVy
    
 
-    if bx < p1x + 20 and by + 20 > p1y and by < p1y + 100:
-        bVx *= 1
+    if bx > p1x + 20 and by + 10 > p1y and by < p1y:
+        bVy *= -1
        
        
     if b1.collide(bx, by):
