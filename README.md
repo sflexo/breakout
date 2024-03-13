@@ -2,7 +2,6 @@ import pygame
 import random
 pygame.init()
 
-
 screen = pygame.display.set_mode((700,500))
 pygame.display.set_caption("pong")
 
@@ -15,7 +14,6 @@ by= 250
 bVx = 3
 bVy = 3
 ball_size = 3
-
 
 clock = pygame.time.Clock()
 
@@ -40,7 +38,6 @@ class brick:
                 return True
         return False
        
-   
 
  
 b1 = brick(50, 50)
@@ -99,7 +96,6 @@ while not doExit:# game loop----------------------
         bVy *=-1      
        
        
-       
    
     if bx < 0 or bx + 20 > 700:
         bVx *= -1
@@ -107,8 +103,6 @@ while not doExit:# game loop----------------------
         bVy *= -1
        
    
-           
-           
            
            
     #render section will go here-----------------------
@@ -135,4 +129,3 @@ while not doExit:# game loop----------------------
 #end game loop    
            
 pygame.quit()
-
